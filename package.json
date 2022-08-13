@@ -1,0 +1,29 @@
+{
+  "name": "magic-boolean-conch",
+  "version": "1.0.0",
+  "description": "magic-boolean-conch, return random boolean",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test/test.js",
+    "publish": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumwa/magic-boolean-conch.git"
+  },
+  "author": "mumwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mumwa/magic-boolean-conch/issues"
+  },
+  "keywords": [
+    "boolean",
+    "random"
+  ],
+  "homepage": "https://github.com/mumwa/magic-boolean-conch#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
