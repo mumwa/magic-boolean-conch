@@ -1,11 +1,22 @@
 'use strict';
 
-const conch = require('../dist/index');
+const { Conch } = require('../dist/index');
+const conch = new Conch;
 
-const test = conch.ask('I\'m Okay?')
+const expected = ['false', false, 'true', true, undefined];
 
-if (test == true || test == false || test == undefined || test == 'true' || test == 'false') {
-    console.log('!-----test passed-----!');
-} else {
-    console.log('!-----test failed-----!');
-}
+test("argument void", () => {
+    expect(expected).toContain(conch.ask());
+});
+test("argument string", () => {
+    expect(expected).toContain(conch.ask('This is string'));
+});
+test("argument number", () => {
+    expect(expected).toContain(conch.ask(1234));
+});
+test("argument undefined", () => {
+    expect(expected).toContain(conch.ask(undefined));
+});
+test("argument object", () => {
+    expect(expected).toContain(conch.ask(conch));
+});
