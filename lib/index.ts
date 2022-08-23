@@ -1,5 +1,5 @@
 export class Conch {
-    ask(question: void): boolean | string | undefined {
+    ask(): boolean | string | undefined {
         const random = Math.random();
         if (random < 0.2) {
             return false;
@@ -12,5 +12,5 @@ export class Conch {
         } else if (random < 1) {
             return true;
         }
-    };
+    }
 }

@@ -1,4 +1,24 @@
-# Magic-Boolean-Conch
-make npm package return random boolean
+# magic-boolean-conch
+magic-boolean-conch return random boolean or undefined. You can ask anything.
 
-Use ask method, conch return true or 'true' or false or 'false' or undefined.
+# Install
+~~~
+npm install magic-boolean-conch
+~~~
+
+# Usage
+~~~javascript
+const conch = require('magic-boolean-conch');
+
+console.log(conch.ask("Am I okay?"));
+console.log(conch.ask(1234));
+console.log(conch.ask(undefined));
+console.log(conch.ask(null));
+console.log(conch.ask(conch));
+~~~
+
+# Dependencies
+Nothing
+
+# License
+MIT
