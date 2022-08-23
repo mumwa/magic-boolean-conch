@@ -1,12 +1,12 @@
 {
   "name": "magic-boolean-conch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "magic-boolean-conch, return random boolean",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "node test/test.js",
+    "test": "jest",
     "publish": "npm run build && npm publish"
   },
   "repository": {
@@ -24,6 +24,15 @@
   ],
   "homepage": "https://github.com/mumwa/magic-boolean-conch#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "eslint": "^8.22.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.3",
     "typescript": "^4.7.4"
-  }
+  },
+  "type": "module"
 }
