@@ -1,1 +1,4 @@
 /lib
+.editorconfig
+.eslintrc.json
+.gitignore
