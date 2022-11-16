@@ -1,6 +1,5 @@
 # magic-boolean-conch
 magic-boolean-conch return random boolean or undefined. You can ask anything.
-Only versions 1.0.0 and 1.0.4 work properly.
 
 # Install
 ~~~
